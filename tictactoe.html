@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="playoptions" class="choose-name-color">
+      <h2>Tic Tac Toe</h2>
+        <hr>
+        <h4>Choose your name and color to play with</h4>
+        <p>
+          Player-1: 
+          <input type="text" id="p1-name" value="Player One" onClick="this.select()" />
+          <select id="p1-bg" name="dropdown1">
+            <option selected disabled>choose color</option>
+            <option value="#CCCCFF">Light Blue</option>
+            <option value="#FF9900">Orange</option>
+            <option value="#FFCCCC">Light Red</option>
+            <option value="#660000">Brown</option>
+            <option value="#99CCFF">Sky Blue</option>
+            <option value="#CCFFCC">Light Green</option>
+            <option value="#FFCCFF">Pink</option>
+          </select>
+        </p>
+        <p>
+            Player-2:
+            <input type="text" id="p2-name" value="Player Two" onClick="this.select()" />
+            <select id="p2-bg" name="dropdown2">
+              <option selected disabled>choose color</option>
+              <option value="#FFCCCC">Light Red</option>
+              <option value="#CCCCFF">Light Blue</option>
+              <option value="#FF9900">Orange</option>
+              <option value="#660000">Brown</option>
+              <option value="#99CCFF">Sky Blue</option>
+              <option value="#CCFFCC">Light Green</option>
+              <option value="#FFCCFF">Pink</option>
+            </select>
+            <button onClick="startGame()" class="start_game">Start Game</button>
+        </p>
+    </div>
+
+    <!-- </div> -->
+    <div class="container" id="main">
+      <span id="turn">Play</span>
+      <!-- show x 0r 0 in div click -->
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+      <div class="box" id="box5"></div>
+      <div class="box" id="box6"></div>
+      <div class="box" id="box7"></div>
+      <div class="box" id="box8"></div>
+      <div class="box" id="box9"></div>
+       <!-- play again and reset all info -->
+      <button onClick="replay()" class="play">Play Again</button>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    
+    <script src="script.js"></script>
+  </body>
+
+</html>

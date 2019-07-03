@@ -1,0 +1,62 @@
+*{box-sizing: border-box}
+            
+.container {
+  width: 300px;
+  overflow: hidden;
+  margin: 50px auto 0 auto;
+}
+.container span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 25px;
+  background: #446CB3;
+ }
+ .container .box {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  transition: all .25s ease-in-out;
+  font-family: sans-serif; 
+  font-size: 85px;
+  text-align: center;
+  line-height: 100px; 
+  cursor: pointer;
+}
+.container .box:hover {
+  background: gray;
+  color: #fff;
+}
+.play {
+  background: #26c281;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid yellow;
+  cursor: pointer;
+  width: 200px;
+  height:40px;
+  font-size: 22px;
+  /* dispaly: block; */
+  margin: 20px 0 0 40px;
+  justify-content: center;
+}
+.choose-name-color {
+  background-color: #F5F5F5;
+  text-align: center;
+  margin: 3% 0px 10% 38%;
+  width: 30%;
+  height: 25%;
+}
+.start_game {
+  background-color: #F5F5F5;
+  /* margin: 10px 40px; */
+  display: block;
+  margin: 4% 0 0 40%;
+} 
+#main {
+  overflow: hidden;
+  display: none;
+}
